@@ -1,20 +1,24 @@
-//escolha do pokemon
-let escolhaDoTreinador = parseInt(gets());
+// Lê a entrada do usuário
+let escolhaTreinador = parseInt(gets());
+
+
+// Variável para armazenar o nome do Pokémon escolhido
 let pokemonEscolhido;
 
 
-//implementação
-if ( escolhaDoTreinador === 1 ){
-    pokemonEscolhido = "Bulbasur";
-} else if ( escolhaDoTreinador === 2 ){
-    pokemonEscolhido = "Charmander";
-} else if(escolhaDoTreinador === 4){
-    pokemonEscolhido = "Pikachu";
-} else{
-    pokemonEscolhido = "Mewtwo";
+// Estrutura condicional para determinar o Pokémon
+if (escolhaTreinador === 1) {
+  pokemonEscolhido = "Bulbasaur";
+} else if (escolhaTreinador === 2) {
+  pokemonEscolhido = "Charmander";
+} else if (escolhaTreinador === 4) {
+  pokemonEscolhido = "Pikachu";
+} else if (escolhaTreinador === 5) {
+  pokemonEscolhido = "Mewtwo";
+} else {
+  pokemonEscolhido = "Pokémon inválido";
 }
 
-//Imprime o Pokémon escolhido:
-if(pokemonEscolhido){
-    print("Você escolheu o " + pokemonEscolhido + " como seu Pokemon inicial.")
-}
+
+// Imprime a mensagem de boas-vindas
+print("Voce escolheu o " + pokemonEscolhido + " como seu Pokemon inicial.");
