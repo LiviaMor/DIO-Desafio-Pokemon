@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha do Pokémon</title>
+</head>
+<body>
+    <h1>Escolha seu Pokémon inicial</h1>
+    <script>
+        // Lê a entrada do usuário   
+        let escolhaDoTreinador = parseInt(prompt("Escolha seu Pokémon inicial:\n1 - Bulbasaur\n2 - Charmander\n4 - Pikachu\n5 - Mewtwo"));
+        let pokemonEscolhido;
+
+        // Implementação
+        if (escolhaDoTreinador === 1) {
+            pokemonEscolhido = "Bulbasaur";
+        } else if (escolhaDoTreinador === 2) {
+            pokemonEscolhido = "Charmander";
+        } else if (escolhaDoTreinador === 4) {
+            pokemonEscolhido = "Pikachu";
+        } else if (escolhaDoTreinador === 5) {
+            pokemonEscolhido = "Mewtwo";
+        } else {
+            pokemonEscolhido = "Pokémon inválido";
+        }
+
+        // Imprime o Pokémon escolhido
+        if (pokemonEscolhido) {
+            console.log("Você escolheu o " + pokemonEscolhido + " como seu Pokémon inicial.");
+        }
+    </script>
+</body>
+</html>
